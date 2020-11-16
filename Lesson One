@@ -1,6 +1,6 @@
 Simply Python - Lesson One
 
-Python as Calculator
+Python as a Calculator
 Arithmetic operators () ** * / + -
 2**3 = 8
 2*2**3 = (2**3) will take priority to get calculated first then 8**2 = 16
