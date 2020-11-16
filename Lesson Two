@@ -1,0 +1,35 @@
+- How to read from user --> input to read text
+- casting int float str 
+- How to print
+
+x = input() #string (Text) # calling
+type(x) str without Value
+x = input('Score: ") #string
+Casting
+x = float(input("Score: ")) # casting from str to int
+type(x) float  # casting done (accept decimals)
+x  int(input("Score: "))    # casting from str to int
+type(x) int  # casting done
+
+x = input("")
+y = input("")
+z = x+y   #This will concatinate both strings
+
+print("Welcome to course") #"Argument"
+print("Welcome"+"man")
+
+Escape sequence
+print("HI\nPython")  #(\n) understood by Python as new line
+Hi
+Python
+print("HI\tPython")  #(\t) understood by Python as keep space = tab
+Hi  Python
+print("Peace be",end = ' ')
+print("upon you")
+Peace be upon your
+print("Peace be","upone you", sep = '####')
+Peace be####upon you
+
+x = 20
+print("x = ",x) = #result x =  20
+print("maximum = ",x)   #result maximum = 20 
