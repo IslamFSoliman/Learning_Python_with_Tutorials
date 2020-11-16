@@ -1,0 +1,27 @@
+Python as Calculator
+2**3 = 8
+2*2**3 = (2**3) will take priority to get calculated first then 8**2 = 16
+5/5*3 = 3 Normal calculation takes place from left to right
+'m' + 'o' Will act like Concatinate = 'mo'
+
+Variables
+x = 10 Informs the system that variable x equals 10
+y = x*3 The system will retrieve x value and calculate y value = 30
+y+5 = 20 Will give an error in assigning operator value since it goyes against the previous assigned value 30
+Update
+x = x+4 Inform the system to update x value to 14
+
+Operators
+z = 2**5 Request the system to calculate z value 32
+y = 3+9/18 = 3.5 Devission takes priority in calculations
+y = (3+9)/18 = 0.666666666 Parenthesis force the program to start with the sum operation
+z = 12//5 = 2 Integerdivission (removes values < 1)
+z = 19%7 = 5 Remander 19/7=2.something 19%7 removes the 2 and gives the remaining none devidable amount.
+
+Variable Types
+x = "CISCO"  #string '' could be used
+type(x)  #functions as a piece of reusable code = name() resul as (string)
+x1 = 40  #Integerdivission (int)
+x2 = 50. #decimal (float)
+G = True (bool)
+Y - [1,4,6,8] (list)
