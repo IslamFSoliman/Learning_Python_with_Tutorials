@@ -1,10 +1,13 @@
+Simply Python - Lesson One
+
 Python as Calculator
+Arithmetic operators () ** * / + -
 2**3 = 8
 2*2**3 = (2**3) will take priority to get calculated first then 8**2 = 16
 5/5*3 = 3 Normal calculation takes place from left to right
 'm' + 'o' Will act like Concatinate = 'mo'
 
-Variables
+Variable - Identifier
 x = 10 Informs the system that variable x equals 10
 y = x*3 The system will retrieve x value and calculate y value = 30
 y+5 = 20 Will give an error in assigning operator value since it goyes against the previous assigned value 30
