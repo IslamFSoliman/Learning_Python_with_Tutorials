@@ -1,0 +1,55 @@
+Package function
+
+Program to calculate the area of a circle
+    r = float(input("Radios: "))
+    A = 3.14*r**2   #3.14 = pi AVG
+    print("Area = ",A)
+
+    import math     #package
+    r = float(input("Radios: "))
+    A = math.pi*r**2
+    print("Area = ",A)
+
+    from math import pi
+    r = float(input("Radios: "))
+    A = pi*r**2
+    print("Area = ",A)
+
+dir(math)   #open math package
+
+Every package is a library that contains many 
+files (text book) within it
+
+Package
+    Modules
+        (function, variable, object, class)
+
+EXAMPLES
+    Sum of 2 numbers
+        x = float(input("Number 1: "))
+        y = float(input("Number 2: "))
+        s= x+y
+        print("Sum = ",s)
+
+    Average of 3 numbers
+        x = float(input("Number 1: "))
+        y = float(input("Number 2: "))
+        z = float(input("Number 3: "))
+        S = (x+y+z)/3
+        print("Average = ", S)
+
+    The distance between two points
+    x1 = float(input("Poiny 1: X coordinate: "))
+    y1 = float(input("Poiny 1: Y coordinate: "))
+    x2 = float(input("Poiny 2: X coordinate: "))
+    y2 = float(input("Poiny 2: Y coordinate: "))
+    d = ((x1-x2)**2+(y1-y2)**2)**0.5
+    print("Distance: ",d)
+
+    from math import sqrt
+    x1 = float(input("Poiny 1: X coordinate: "))
+    y1 = float(input("Poiny 1: Y coordinate: "))
+    x2 = float(input("Poiny 2: X coordinate: "))
+    y2 = float(input("Poiny 2: Y coordinate: "))
+    d = sqrt((x1-x2)**2+(y1-y2)**2)
+    print("Distance: ",d)
