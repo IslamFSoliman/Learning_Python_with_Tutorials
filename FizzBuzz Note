@@ -1,0 +1,21 @@
+(FizzBuzz problem solutions)
+
+def fizzbuzz(n):        #Accumulation Model
+    result = ''
+    if n % 3 == 0:
+        result += "Fizz"
+    if n % 5 == 0:
+        result += 'Buzz'
+    if not result:
+        result = str(n)
+    return result
+
+def fizzbuzz(n):        #Tail return approach
+    if n % 15 == 0:
+        return 'FezzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)
