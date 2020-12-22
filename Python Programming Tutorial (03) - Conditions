@@ -1,0 +1,45 @@
+#Conditions
+
+#Comparison Operators
+
+<   # less than
+<=  # less than or equal to
+>   # greater than
+>=  # greater than or equal to
+==  # equal to
+!=  # not equal to
+
+# These operators can be used to compare numbers (integers and floats) or to compare strings. However if you are comparing number and strings you can only use the == and != operator.
+
+    #___________________________________________________________#
+
+x = 5
+y = 9
+
+x > y     # this is False
+y == x    # this is False
+x < y-1   # this is True
+x+1 != y  # this is True
+2.0 > 5   # this is False
+
+"hello" == "hello"  # this is True
+"tim" == "Tim"      # this is False
+"a" > "b"           # this is False
+"apple" < "tim"     # this is True
+
+"5" == 5    # this will return False
+
+# NOT ALLOWED
+2 > "hello"
+3.0 < "tim"
+# These result in errors
+
+    #___________________________________________________________#
+
+# We can also declare variables to hold the values of conditions.
+
+check = "tim" == "joe"
+larger = 1 > 5
+bothSame = larger == check      # This will be comparing two boolean values together
+
+# if they are both the same we will get a True value
