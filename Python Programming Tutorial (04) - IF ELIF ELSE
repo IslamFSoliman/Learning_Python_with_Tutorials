@@ -1,0 +1,64 @@
+
+if 4 < 5:
+    print("true")
+    
+# The basic syntax for an if statement
+
+# It is extremely important to be mindful of your codes spacing and indentation.
+
+number = int(input("Please type a number: "))
+if number < 5:
+    print("the number is less than 5")
+print("I always run")
+
+# If the number is less than 5 both print statements will execute. 
+# Otherwise just "I always run" will be printed to the screen.
+
+    #___________________________________________________________#
+
+# The Else Statement
+
+number = int(input("Please type a number: "))
+if number < 5:
+    print("the number is less than 5")
+else:
+    print("the number is NOT less than 5")
+
+# Note: The indentation is still important. Notice that the else is in-line with the if statement above it.
+
+    #___________________________________________________________#
+
+# The Elif Statement
+
+number = int(input("Please type a number: "))
+
+if number < 5:
+    print("the number is less than 5")
+elif number < 10:
+    print("the number is greater than or 5 and less than 10")
+elif number < 15:
+    print("the number is greater than or 10 and less than 15")
+else:
+    print("the number is NOT less than 15")
+
+    #___________________________________________________________#
+
+height = input()
+
+if float(height) <= 1:
+    print('you annot ride, under 1M')
+elif float(height) == 5:
+    print('wow you are tall')
+elif float(height) >= 2:
+    print('you cannot ride, over 2M')
+else:
+    print('you can ride')
+    
+    #___________________________________________________________#
+
+if number == 10:
+    print("The number is 10")
+elif number == 15:
+    print("The number is 15")
+
+# Notice it is not necessary to include an else
