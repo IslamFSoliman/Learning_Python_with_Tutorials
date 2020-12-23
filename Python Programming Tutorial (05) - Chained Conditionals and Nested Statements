@@ -1,0 +1,92 @@
+#Chained Conditionals
+
+and     # The and keyword allows us to check if two conditions are true.
+        # If they are both true then the entire condition is true.
+        # If one or both of them are false then the entire condition is false.
+
+or      # The or keyword allows us to check if one of two conditions is true.
+        # If one or both of the conditions are true then then entire condition will be true.
+        # If both of the conditions are false then the entire condition is false.
+
+not     # The not keyword allows us to check if an entire condition is false.
+        # If the condition is false it will result in a true value.
+        # If the condition is true it will give us a false value (you can think of it as reversing the condition).
+
+True and False  # This gives False
+True and True   # This gives True
+False and False # This gives False
+
+True or False   # This gives True
+True or True    # This gives True
+False or False  # This gives False
+
+not True        # This gives False
+not False       # This gives True
+
+    #___________________________________________________________#
+
+x = 2
+y = 3
+
+if x == y and x + y == 5:
+    print('yes')        #This wont run, only one condition is true.
+
+if x == y or x + y == 5:
+    print('yes')
+
+if not(x == y or x + y == 6):
+    print('yes')
+else:
+    print('no')
+    
+    #___________________________________________________________#
+
+# We can also combine the use of these keywords to create longer conditions:
+
+(True or False) and False  # This is False
+False and True and True    # This is False
+(True or False) and True   # This is True
+True and not(False)        # This is True
+
+not(1 > 2 and 2-7 == -5)   # This is True
+
+    #___________________________________________________________#
+
+# We can combine this with our knowledge of if statements to check multiple conditions in one if:
+
+food = input("What is your favorite food? ")
+drink = input("What is your favorite drink? ")
+
+if food == "pizza" and drink == "juice":
+    print("Those are my favorite as well!")
+else:
+    print("One of those is not my favorite")
+    
+    #___________________________________________________________#
+
+# Nested Statements
+# Nesting is simply putting code inside of other code
+
+answer = input("What is your age? ")
+
+if int(answer) >= 18:
+    answer = input("What country do you live in? ")
+    if answer == "canada":
+        print("Me as well!")
+    else:
+        print("Oh, I do not live there.")
+        
+    #___________________________________________________________#
+
+x = 2
+y = 3
+
+if x == 2:
+    if y == 3:
+        print('x = 2, y = 3')
+    else:
+        print('x = 2, y != 3')
+else:
+    print('x != 2')
+
+# There is no limit to the amount of times that we can nest. We just have to be sure that we are aware of our indentation.
