@@ -1,0 +1,46 @@
+#A loop will continue to run (or loop) while a certain condition is satisfied.
+#We can use a for loop when we want to loop (or repeat something) a known amount of times.
+
+for x in range(10):
+    print(x)
+
+#We use the keyword for to declare that we are creating a loop.
+#Then we define a variable (in this case x) which is going to be our "counter".
+#We then type the keyword in followed by a range.
+
+#Range: is a function in python that allows us to start at a number and count up to a certain number while increasing by any interval we want.
+
+range(start, stop, step)
+
+range(10)  # When only one number is in the function it means we start at 0 
+# increase by one each time and stop when our variable hits 10
+
+range(5,10)  # When two numbers are in the function it means to start at the first number (in this case 5) 
+# increase by one each time and stop when our variable hits the second number (in this case 10)
+
+range(1,5,2)  # when three numbers are in the function it means to start at the first number (1)
+# stop at the second number (5)
+# and increase by the last number (2)
+    #___________________________________________________________#
+#Examples
+
+for x in range(4):
+    # we are starting at 0, increasing by 1 and stopping at 4
+    print(x)
+
+# The output for this will look like
+0
+1
+2
+3
+# Since we stop at 4 we do not print 4
+
+
+for i in range(0,6,2):
+    # we are starting at 0, increasing by 2 and stopping at 6
+    print(i)
+
+# The output for this will look like
+0
+2
+4
