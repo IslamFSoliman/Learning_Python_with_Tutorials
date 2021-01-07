@@ -1,0 +1,35 @@
+# While loop
+# very similar to a for loop.
+# It simply continues to do something while a given condition is true.
+
+while condition == True:
+    print("I will run until the conditon is False")
+
+    #___________________________________________________________#
+
+# Breaking a Loop
+# Sometimes while we are looping we may encounter a situation where we want to exit the loop.
+# It may be the case that the condition keeping the loop running is still True 
+# but we would still like to "break" the loop. We can do this using the "break" keyword.
+
+while True:
+    inp = input("Type a number: ")
+    if inp == "5":
+        break                # when 5 is typed we will stop asking the user to type a number
+    print("Try again...")    # Try again will not be printed if 5 is typed
+
+    #___________________________________________________________#
+# Example
+
+# When we want to keep asking the user for input until we get a certain value
+
+run = False
+
+while run:
+    answer = input("What is 5 + 7")
+    
+    if answer == "12":
+        print("Correct!")
+        run = False
+    else:
+        print("Try Again...")
