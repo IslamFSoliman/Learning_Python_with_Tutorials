@@ -1,0 +1,68 @@
+# Lists
+# A list is another data type in python (like ints, strs etc.).
+# A list is a collection of elements AKA items. 
+# A list can hold an infinite amount of elements of different data types.
+
+myList = ["tim", 43, 7.0, True]
+fruits = ["apple", "pear", "orange"]
+numbers = [1, 4, 6, 77, -8]
+# Each item in our list is separated by a comma
+
+# Indexing Elements
+# To access individual elements in our list we can do something called indexing. Each element in our list is automatically given an integer value that represents its location in the list. We start assigning indexes at the number 0. Meaning in our fruit list (see above) the element "apple" would be index 0 and the element "pear" would be index 1. We can use these integers to access certain values in the list by typing our list name, followed by square brackets ([]) enclosing our index:
+
+fruits = ["apple", "pear", "orange"]
+
+print(fruits[0])  # prints "apple"
+print(fruits[1])  # prints "pear"
+print(fruits[2])  # prints "orange"
+print(fruits)  # prints ["apple", "pear", "orange"]
+
+# Adding and Removing Elements
+# Lists are a mutable data type, meaning that we can change the elements within them. To change an already existing element we can assign that elements index to equal a new value:
+
+fruits = ["apple", "pear", "orange"]
+
+fruits[1] = "banana"
+
+print(fruits)  # prints ["apple", "banana", "orange"]
+
+# To add a new item to a list we can use the method .append(). Whatever is in the brackets will be added to the end of the list:
+
+fruits = ["apple", "pear", "orange"]
+
+fruits.append("banana")
+
+print(fruits)  # prints ["apple", "pear", "orange", "banana"]
+
+# To remove an item from the list we can use the method .remove(). Whatever item is inside of the brackets will be removed from the list. We can also remove items by index using the "del" keyword:
+
+# Using .remove()
+fruits = ["apple", "pear", "orange"]
+
+fruits.remove("appple")
+
+print(fruits)  # prints ["pear", "orange"]
+
+
+# Using del
+fruits = ["apple", "pear", "orange"]
+
+del fruits[0]
+
+print(fruits)  # prints ["pear", "orange"]
+
+# Tuples
+# Tuples are another data type in python. They are similar to lists except they are immutable. This means we cannot change the value of a tuple by adding, removing or changing already existing items. To create a tuple we use regular brackets "()". We separate our items by commas and like lists we can index items by using square brackets "[]".
+
+nums = (1,4,5,6)
+print(nums[0])  # prints 1
+
+# NOT ALLOWED
+nums[1] == 4   
+nums.append(2)
+nums.remove(4)
+del nums[3]
+# These will cause errors 
+
+# For now we will not worry about tuples and their uses. We will simply acknowledge that they do exist and understand some of their basic properties.
