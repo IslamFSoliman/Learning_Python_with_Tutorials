@@ -1,0 +1,44 @@
+# String Methods
+# In python we have some very useful things called methods. Now methods are pretty much anything you use on a data type in the form dataType.method(). They are built into python and save us a lot of work and a lot of time. Python has some very useful methods that we can use on the data type string. The most commonly used and most useful ones are:
+# - .strip()
+# - .split()
+# - .lower()
+# - .upper()
+# - len() * This is actually a function*
+
+# These methods are very intuitive and pretty much do exactly what they say.
+
+# .strip(): will remove any trailing or leading white spaces from a string.
+
+# .split(): will return a list of substrings from the given string. By default it splits the string by spaces (each word becomes an element in the list). However, you can choose the string to split at by inserting it between the brackets.
+
+# .lower(): will make every letter in the string lowercase.
+
+# .upper(): will make every letter in the string uppercase.
+
+# len(): will return the amount of characters in the given string (including spaces).
+
+myStr = "    my nAME Is Tim"
+
+myStr.strip()  # -> "my Name Is Tim"
+myStr.split()  # -> ["my", "nAME", "Is", "Tim"]
+myStr.lower()  # -> "    my name is tim"
+myStr.upper()  # -> "    MY NAME IS TIM"
+len(myStr)     # -> 18
+
+
+# Example
+# A practical example of when we would use these methods can be seen below:
+
+# we want the user to be able to type any variation of tim and be told that they are correct
+# if we don't convert everything into lower cases that means if the user types "Tim"
+# they'll be told that they got it wrong
+# same goes for spaces, if the user clicks space before or after they type "tim"
+# we still want to tell them they got the correct answer
+
+answer = input("What is my name? ")
+
+if answer.lower().strip() == "tim":
+    print("Correct!")
+else:
+    print("That is incorrect!")
