@@ -1,0 +1,48 @@
+# Iteration by Item
+# Whenever we execute a loop we have gone through an iteration. We can "iterate" (or loop) through the elements within certain data types. We can loop through the following data types as they are a collection of elements.
+# - Strings (a collection of characters)
+# - Lists (a collection of elements)
+# - Tuples (a collection of elements)
+
+# To iterate through a collection means to look at all of the elements within the collection. We can do this using the syntax shown below.
+
+myList = [1,4,6,"hi"]
+
+for item in myList:
+    print(item)
+
+# This will print 
+1
+4
+6
+hi
+
+
+# The variable "item" will be changed to equal the next item in the list after every loop (or iteration).
+
+# Example
+# An example of when we may iterate by item is if we are checking to see if a certain item exists in a list.
+
+myList = [1,4,6,"hi"]
+
+for item in myList:
+    if item == 6:
+        print("I found 6 in the list")
+    else:
+        print("This is not 6")
+
+# eW can do the same with strings or with tuples.
+
+
+# This program counts how many "l"s appear in the string 
+myString = "hello tim"
+
+count = 0
+for item in myString:
+    if item == "l":
+        count += 1
+
+print("I found", count, '"l"s in the string')
+
+# When looping through a string we will look at each letter
+# Looping through a tuple works the same as a looping through list
