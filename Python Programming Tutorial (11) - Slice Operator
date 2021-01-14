@@ -1,0 +1,45 @@
+# Slice Operator
+# The slice operator is unique to python and makes our lives as programmers MUCH easier. It is somewhat a combination between the range function and indexing. You can think of a slice as a section (or part) or a collection. We can takes "slices" of lists, strings and tuples. The basic syntax for a slice is square brackets with colons and integers inside "[0:1:2]".
+
+myStr[start:stop:step]
+myStr[:stop]  # By using one colon and leaving the first argument blank we automatically start at index 0, stepping by 1
+myStr[start:]  # By using one colon and leaving the last argument blank we automatically go to the end, stepping by 1
+myStr[::step]  # by using two colons and leaving the first two arguments blank we start at index 0, go to the end and step by 1
+
+# The slice operator has optional arguments for if you decide to leave things blank. It will automatically start at index 0, stop at the end and step by 1 unless you declare otherwise. Here are some examples of the slice operator in use.
+
+myStr = "hello"
+
+myStr[1:]   # -> "ello"
+myStr[:3]   # -> "hel" (we don't include the stopping point)
+myStr[::2]  # -> "hlo"
+"new string to slice"[4:12:2] # -> "srn "
+
+
+# Insertion Using Slice
+# The slice operator is also useful for inserting elements into a list at a certain index. This specific functionality is only available for lists. To do this we simply use the slice operator with one colon and place the same integer on either side. At this index we will insert a specific item.
+
+myList = [97,98,99,100]
+
+myList[1:1] = -40
+
+print(myList)  # prints [97, -40, 98, 99, 100]
+
+# Negative Indexing
+# Unlike most other languages python supports negative indexing. What this means is that we can use negative integers to access values within a collection (str, list, tuple etc.). Negative indexing works similarly to positive indexing where -1 represents the last element in the list and -len(list) represents the first element. We can use negative indexing for slicing as well.
+
+fruits = ["apple", "pear", "banana"]
+
+fruits[-1]  # -> "banana"
+fruits[-3]  # -> "apple"
+
+fruits[-2:]   # -> ["pear", "banana"]
+fruits[::-1]  # -> ["banana","pear","apple"]
+# Doing [::-1] reverses the list
+
+# These same properties apply to strings and tuples
+
+myStr = "hello"
+myStr[-1]    # -> "o"
+myStr[::-1]  # -> "olleh"
+myStr[:-3]   # -> "he"
